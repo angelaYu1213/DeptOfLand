@@ -1,0 +1,22 @@
+.sitemapWp{max-width:1080px;width: 80%;margin: 0 auto;}
+.sitemapWp h2{color: #555;font-size:2rem;text-align: center;margin: 40px auto 20px;}
+    .sitemapWp .description{margin:30px auto;}
+    .sitemapWp .description p{line-height:2rem;}
+    .sitemapWp .content{display: flex;justify-content: space-around;margin: 0 auto;}
+    .sitemapWp .content ul{width:19%; border:1px solid #ddd;border-radius:5px;}
+    .sitemapWp .content ul li{text-align: center;border-bottom:1px solid #ededed;height: 63px;}
+    .sitemapWp .content ul li a{display: block;width: 100%;padding:20px;box-sizing: border-box;}
+    .sitemapWp .content ul>a{display:block;height: 2rem;line-height:0; background-color: #535353;color:#fff; padding:20px;box-sizing: border-box;text-align: center;}
+    .sitemapWp .content ul li a:hover{color: #f44336;}
+    @media(max-width:800px){
+        .sitemapWp{width:90%;}
+        .sitemapWp .content{flex-wrap: wrap;justify-content: flex-start;}
+        .sitemapWp .content ul{width: 30%;margin: 10px 5px;}
+    }
+    @media(max-width:600px){
+        .sitemapWp .content ul{width: 45%;}
+    }
+    @media(max-width:414px){
+        .sitemapWp .content{justify-content: center;}
+        .sitemapWp .content ul{width: 80%;}
+    }

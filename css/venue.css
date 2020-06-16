@@ -1,0 +1,13 @@
+#main .content{padding:50px 0;box-sizing: border-box;}
+#main .content:nth-child(even){background-color: #C2A8784C;}
+#main .content:nth-child(odd){background-color: #fff;}
+#main .content:nth-child(even) p{background-color:#fff;}
+#main .content:nth-child(odd) p{background-color:#C2A8784C;}
+#main .content .border{width:100px;margin:0 auto;text-align:center;border-bottom:4px solid #355834;line-height:2.5rem;font-size:1.5rem;font-weight:700;}
+#main .content:nth-child(even) .border,
+#main .content:nth-child(odd) .border{background-color:transparent;margin-bottom: 50px;}
+#main .flex{width:90%;margin:0 auto;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+#main .flex a{display:block;width:30%;margin:0 auto 50px;}
+#main .flex a img{width:100%;object-fit: contain;}
+#main .flex a p{background-color:#fff;text-align: center;margin-top:-5px;height:50px;line-height:50px;font-weight:400;}
+#main .flex a:hover p{background-color:#355834;color: #fff;}
