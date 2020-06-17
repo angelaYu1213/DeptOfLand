@@ -1,8 +1,8 @@
 /*main*/
 #main{width: 100%;margin-bottom: 150px;padding: 0;}
-#main .information{max-width:1080px;width:100%;margin: 0 auto;}
-#main .information{display: flex;justify-content:flex-start;align-items: flex-start; overflow: hidden;background-color:#f2f5f2;height:auto;}
-#main .information img{width:30px;height:30px;margin-right:10px;margin-left:20px;margin-top: 10px;}
+#main .information{max-width:1080px;width:100%;margin: 0 auto;display: flex;justify-content:flex-start;align-items: flex-start;
+ background-color:#f2f5f2;height:auto;padding: 10px 0;}
+#main .information img{width:30px;height:30px;margin-right:10px;margin-left:20px;}
 #main .information #abgne_marquee{width:94%;}
 #main .information #abgne_marquee li{font-size:1.1rem;font-weight:200;padding-left: 30px;box-sizing: border-box;line-height: 1.5rem;}
 /*row*/  
@@ -31,7 +31,6 @@ iframe{width:49%;margin-right:1%;height:450px;}
     .row1 .content .left,.row1 .content .right,.row3 .content .left,iframe{width:70%;margin:5px auto;}
     .row .more{margin: 20px auto 0;}
     .row2 .content>div{width: 70%;}
-    #main .information #abgne_marquee li{padding:10px 10px 10px 20px;box-sizing: content-box;}
 }
 
 @media(max-width:750px){  
