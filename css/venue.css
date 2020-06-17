@@ -1,8 +1,8 @@
 #main .content{padding:50px 0;box-sizing: border-box;}
-#main .content:nth-child(even){background-color: #C2A8784C;}
+#main .content:nth-child(even){background-color:#EEE5D8;}
 #main .content:nth-child(odd){background-color: #fff;}
 #main .content:nth-child(even) p{background-color:#fff;}
-#main .content:nth-child(odd) p{background-color:#C2A8784C;}
+#main .content:nth-child(odd) p{background-color:#EEE5D8;}
 #main .content .border{width:100px;margin:0 auto;text-align:center;border-bottom:4px solid #355834;line-height:2.5rem;font-size:1.5rem;font-weight:700;}
 #main .content:nth-child(even) .border,
 #main .content:nth-child(odd) .border{background-color:transparent;margin-bottom: 50px;}
