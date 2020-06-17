@@ -71,25 +71,26 @@ footer .display .close .big,header .close .big{font-size:4rem;font-weight:200;co
 header .close .big{display:block;font-size:2.7rem;line-height:2rem;}
 footer .display .close .small,header .close .small{font-size:1rem;color:#fff;}
 header .close .small{display:block;font-size: 0.8rem;font-weight: 200;}
-footer .reservation{position:absolute;right:500px;top:300px;width:53px;height:200px;background-color:#E0D3BB;color:#122C28;
-display:flex;flex-direction: column;justify-content: center;border-top-left-radius:20px;border-bottom-left-radius:20px;
-cursor: pointer;border-right:1px solid #fff;}
+footer .reservation{display:block;position:absolute;right:500px;top:300px;width:53px;height:200px;background-color:#E0D3BB;color:#122C28;
+display:flex;flex-direction: column;justify-content: center;align-items:center;border-top-left-radius:20px;border-bottom-left-radius:20px;
+cursor: pointer;border-right:1px solid #fff;padding:15px 0;}
 footer .reservation img{width:31px;display: block;margin: 0 auto;}
-footer .reservation span{color:#355834;font-size:1.5rem;line-height:38px;font-weight:700;writing-mode: vertical-lr;margin-top: 15px;
-margin-left: 8px;}
+footer .reservation span{color:#355834;font-size:1.5rem;font-weight:700;writing-mode:vertical-lr;writing-mode:tb-lr;
+display: block;width:30px;margin-top: 15px;}
 footer .visit{position:fixed;right:-500px;top:0;width: 500px;height:100vh;background-color:#C3A877;overflow-y: scroll;
 padding:30px 0;box-sizing: border-box;}
-footer .visit #time{cursor: pointer;width:100%;}
+footer .visit #time{cursor: pointer;display: block;width:100%;}
+footer .visit #time input{background-color: transparent;margin-top: 0;}
 button,
 footer .visit .time,
 footer .visit .memo>p{display:block;width:80%;margin:0 auto 18px;height:45px;background-color:#fff;box-sizing: border-box;
     padding-left: 10px;position:relative;}
 footer .visit .time p{height:45px;line-height:45px;padding-left:25px;margin-bottom: 0;cursor:pointer;}
 footer .visit .time .content{display: none;border-top:1px solid #444;position: absolute;
-left: -38%;z-index:1;width:138%;margin:0;}
-footer .visit .time ul{display:flex;flex-wrap:wrap;background-color:#fff;position: relative;margin-bottom: 0;}
-footer .visit .time ul li{width:20%;margin:15px 2.5% 5px;background-color:#fff;border-radius:20px;text-align:center;padding:5px 0;cursor:pointer;}
-footer .visit .time ul li:hover{background-color:#EEE5D8;}
+left: -38%;z-index:1;width:138%;margin:0;border-top: 1px solid #444;}
+footer .visit .time p{display:flex;flex-wrap:wrap;background-color:rgba(255, 255, 255, 0.58);position: relative;margin-bottom: 0;height: auto;}
+footer .visit .time p a{display:block;width:20%;margin:10px 2.5% 5px;background-color:#fff;border-radius:20px;text-align:center;padding:5px 0;cursor:pointer;}
+footer .visit .time p a:hover,footer .visit .time p a:focus{background-color:#EEE5D8;}
 footer .visit .title{color:#fff;font-size:3rem;text-align: center;margin: 90px auto 30px;}
 footer .visit .flex{display: flex;width:80%;margin:0 auto 18px;height:45px;background-color:#fff;}
 footer .visit .flex label{display: block; width:30%;color:#444;padding-left:25px;box-sizing: border-box;height:45px;line-height:45px;}
