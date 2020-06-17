@@ -12,7 +12,6 @@
                    </div>
                </div>
                <ul>
-                   <li><a href="sitemap.html" title="網站導覽">網站導覽</a></li>
                    <li><a href="introduction.html" title="本館簡介">本館簡介</a></li>
                    <li><a href="venue.html" title="館內展示">館內展示</a></li>
                </ul>
@@ -25,7 +24,14 @@
     var $H=$(window).height();
     $('#Mnav').width($W);
     $('#Mnav').height($H);
-
+ $(document).ready(function(){
+    $(window).resize(function(){
+        var $W=$(window).width();
+        var $H=$(window).height();
+         $('#Mnav').width($W);
+         $('#Mnav').height($H);
+      });   
+    });
 /*手機menu下拉*/
 $('#menu').click(function(){
     $('#Mnav').slideDown();
