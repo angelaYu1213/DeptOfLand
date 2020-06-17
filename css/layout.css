@@ -94,11 +94,11 @@ footer .visit .time p a{display:block;width:20%;margin:10px 2.5% 5px;background-
 footer .visit .time p a:hover,footer .visit .time p a:focus{background-color:#EEE5D8;}
 footer .visit .title{color:#fff;font-size:3rem;text-align: center;margin: 90px auto 30px;}
 footer .visit .flex{display: flex;width:80%;margin:0 auto 18px;height:45px;background-color:#fff;}
-footer .visit .flex label{display: block; width:30%;color:#444;padding-left:25px;box-sizing: border-box;height:45px;line-height:45px;}
+footer .visit .flex label{display: block; width:30%;color:#444;padding-left:20px;box-sizing: border-box;height:45px;line-height:45px;}
 footer .visit input{display: block;width:70%;color:#333;height:45px;border:none;}
 footer .visit #datepicker:focus,footer .visit .time .top #time:focus {outline:none;color: transparent;text-shadow: 0 0 0 #444;}
 footer .visit .memo{margin-bottom:25px;}
-footer .visit .memo>p{margin-bottom:5px;height:45px;line-height:45px;padding-left:25px;color:#444;box-sizing: border-box;}
+footer .visit .memo>p{margin-bottom:5px;height:45px;line-height:45px;padding-left:20px;color:#444;box-sizing: border-box;}
 footer .visit .memo ul{margin-top:-18px;background-color:#E1D4BC;
 display:block;width:80%;margin:0 auto 18px;}
 footer .visit .memo ul li{padding:10px 0 20px 5px;}
@@ -149,11 +149,9 @@ ui-state-highlight, .ui-widget-content .ui-state-highlight{border:1px solid #EEE
 @media(max-width:475px){
     .top>a .logo{width:200%;}
     footer .visit .flex,footer .visit .memo ul,footer .visit .memo>p{width:90%;}
-   
 }
 @media(max-width:414px){
     .top>a .logo{width:230%;}
-    footer .visit .memo>p,footer .visit .flex label{padding-left: 20px;}
     .title h2{font-size:2.5rem;}
     .title h3{font-size:1.4rem;}
 }
