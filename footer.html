@@ -24,7 +24,10 @@
        <div class="flex">
            <label for="time">參觀時間</label>
            <div class="time">
-               <a href="javascript:;" id="time"><input type="text" autocomplete="off" placeholder="▼" value="" required /></a>
+               <div class="top">
+                   <a href="javascript:;" id="time">▼</a>
+                   <input type="text" autocomplete="off" placeholder="▼" value="" required />
+               </div>
                <div class="content">
                   <p>
                        <a href="javascript:;">09:00</a>
@@ -99,26 +102,35 @@
         $('footer .visit').fadeOut();
     })
     /*預約時間*/
-    $('footer .visit .time #time').click(function(){
+    $('footer .visit .time .top #time').click(function(){
         $('footer .visit .time .content').fadeToggle();
     });
-    $('footer .visit .time p a').click(function(){
-        let $time=$(this).html();
-        $('footer .visit .time #time input').val($time);
+    $('footer .visit .time .content p a').click(function(){
+        $(this).addClass('theTime');
+        $(this).siblings('a').removeClass('theTime');
+        let finalTime=$(this).html();
+        $('footer .visit .time .top input').val(finalTime);
         $('footer .visit .time .content').fadeOut();
+        $('footer .visit .time .top #time').html(finalTime); 
     });
     /*tab choice time*/
     $('footer .visit .time').focusin(function(){
         $('footer .visit .time .content').fadeIn();
     });
-    $('footer .visit .time content p a').focusin(function(){
-        input.addEventListener("keyup", function(event) {
+    $('footer .visit .time .content p a').focusin(function(){
+        $(this).addClass('theTime');
+        $(this).siblings('a').removeClass('theTime');
+        $('.theTime').keyup(function(){
           if (event.keyCode === 13) {
-             let finalTime = $(this).html();
-             $('footer .visit .time #time input').val(finalTime);
+             let finalTime = $('.theTime').html();
+             $('footer .visit .time .top input').val(finalTime);
              $('footer .visit .time').blur(); 
+             $('footer .visit .time .top #time').html(finalTime);  
           }
         });
+    });
+    $('footer .visit .time .content p a').blur(function(){
+        $(this).removeClass('theTime');
     });
     $('footer .visit #name').focusin(function(){
         $('footer .visit .time .content').fadeOut();
@@ -140,8 +152,8 @@
               $("#number").focus().css("background-color","#FFFFCC").attr("placeholder","請輸入參觀人數");
         }else if($("#datepicker").val() === ""){
               $("#datepicker").focus().css("background-color","#FFFFCC").attr("placeholder", "請選擇參觀日期");    
-        }else if($("#time").val() === ""){
-              $("#time").focus().css("background-color","#FFFFCC").attr("placeholder", "請選擇參觀時間  ▼");
+        }else if($("#time input").val() === ""){
+              $("#time input").focus().css("background-color","#FFFFCC").attr("placeholder", "請選擇參觀時間  ▼");
         }else if($("#name").val() === ""){
               $("#name").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入聯絡人姓名");
         }else if($("#phone").val() === "" || $("#phone").val().length !== 10){
