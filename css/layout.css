@@ -88,7 +88,7 @@ footer .visit .memo>p{display:block;width:80%;margin:0 auto 18px;height:45px;bac
 footer .visit .time p{height:45px;line-height:45px;padding-left:25px;margin-bottom: 0;cursor:pointer;}
 footer .visit .time .content{display: none;border-top:1px solid #444;position: absolute;
 left: -38%;z-index:1;width:138%;margin:0;border-top: 1px solid #444;}
-footer .visit .time p{display:flex;flex-wrap:wrap;background-color:rgba(255, 255, 255, 0.58);position: relative;margin-bottom: 0;height: auto;}
+footer .visit .time p{display:flex;flex-wrap:wrap;background-color:#fff;position: relative;margin-bottom: 0;height: auto;}
 footer .visit .time p a{display:block;width:20%;margin:10px 2.5% 5px;background-color:#fff;border-radius:20px;text-align:center;padding:5px 0;cursor:pointer;}
 footer .visit .time p a:hover,footer .visit .time p a:focus{background-color:#EEE5D8;}
 footer .visit .title{color:#fff;font-size:3rem;text-align: center;margin: 90px auto 30px;}
