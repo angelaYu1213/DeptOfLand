@@ -9,7 +9,7 @@
  * Contributing author: Tyler Smith (@mbmufffin)
  *
  */
-/* 
+/*
 ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
@@ -279,7 +279,7 @@ display: block;}
     .flex-direction-nav li{bottom:75%;}
 }
 @media(max-width:640px){
-    
+
     .flex-direction-nav a{width: 26px;height: 26px;}
     .flex-direction-nav a:before{font-size: 26px;}
 }
@@ -290,5 +290,5 @@ display: block;}
     .flex-direction-nav li{bottom:80%;}
     .flex-direction-nav a{width: 22px;height: 22px;}
     .flex-direction-nav a:before{font-size: 22px;}
-    
+
 }

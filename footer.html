@@ -90,17 +90,19 @@
 <script>
   /*預約toggle*/
     $('.reservation').click(function(){
-        $('footer .display').css('right','0');
+        $('footer .display').animate({'marginRight':500}, 800);
         $('footer .reservation').css('background-color','#C3A877');
-        $('footer .visit').show().css('right','0');
-        
+
     });
     $('footer .display .close').click(function(){
-        $('footer .display').css('right','-500px');
-        $('footer .reservation').css('background-color','#E0D3BB');
         $('footer .visit input').val('');
-        $('footer .visit').fadeOut();
-    })
+        $('footer .display').animate({'marginRight':0}, 800);
+        function myFunction() {
+            setTimeout(function(){
+                $('footer .reservation').css('background-color','#E0D3BB');
+            }, 3000);
+        }
+    });
     /*預約時間*/
     $('footer .visit .time .top #time').click(function(){
         $('footer .visit .time .content').fadeToggle();
@@ -111,7 +113,7 @@
         let finalTime=$(this).html();
         $('footer .visit .time .top input').val(finalTime);
         $('footer .visit .time .content').fadeOut();
-        $('footer .visit .time .top #time').html(finalTime); 
+        $('footer .visit .time .top #time').html(finalTime);
     });
     /*tab choice time*/
     $('footer .visit .time').focusin(function(){
@@ -124,8 +126,8 @@
           if (event.keyCode === 13) {
              let finalTime = $('.theTime').html();
              $('footer .visit .time .top input').val(finalTime);
-             $('footer .visit .time').blur(); 
-             $('footer .visit .time .top #time').html(finalTime);  
+             $('footer .visit .time').blur();
+             $('footer .visit .time .top #time').html(finalTime);
           }
         });
     });
@@ -142,7 +144,7 @@
     /*submit*/
     $('.visit input[type="text"]').blur(function(){
         if($(this).val() !== ''){
-           $(this).css("background-color","#fff");   
+           $(this).css("background-color","#fff");
         }
     });
     $('button').click(function(){
@@ -151,7 +153,7 @@
         }else if($("#number").val() === ""){
               $("#number").focus().css("background-color","#FFFFCC").attr("placeholder","請輸入參觀人數");
         }else if($("#datepicker").val() === ""){
-              $("#datepicker").focus().css("background-color","#FFFFCC").attr("placeholder", "請選擇參觀日期");    
+              $("#datepicker").focus().css("background-color","#FFFFCC").attr("placeholder", "請選擇參觀日期");
         }else if($("#time input").val() === ""){
               $("#time input").focus().css("background-color","#FFFFCC").attr("placeholder", "請選擇參觀時間  ▼");
         }else if($("#name").val() === ""){
@@ -163,9 +165,9 @@
                   'maxlength':'10'
               });
         }else if($("#email").val() === ""){
-              $("#email").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入聯絡人Email");   
+              $("#email").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入聯絡人Email");
         }else{
             self.location='success.html';
         }
     });
-</script>        
+</script>

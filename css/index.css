@@ -5,7 +5,7 @@
 #main .information img{width:30px;height:30px;margin-right:10px;margin-left:20px;}
 #main .information #abgne_marquee{width:94%;}
 #main .information #abgne_marquee li{font-size:1.1rem;font-weight:200;padding-left: 30px;box-sizing: border-box;line-height: 1.5rem;}
-/*row*/  
+/*row*/
 .row p{color:#092d00;line-height:1.7rem;}
 .row p.marginBottom{margin-bottom:30px;}
 .row .content{display: flex;align-items: center;}
@@ -16,7 +16,6 @@
 .row1 .content img,.row2 .content>div img{width:100%;object-fit: contain;}
 .row .more{display:block;background-color:#3e5738;color:#fff;width:150px;height:60px;line-height:60px;text-align:center;margin-top:20px;}
 .row .more.center{margin:0 auto;}
-/*iframe*/
 iframe{width:49%;margin-right:1%;height:450px;}
 .row3 .content .left{width:47%;margin-right:3%;}
 .row3 .content .flex{display: flex;align-items: center;}
@@ -33,7 +32,7 @@ iframe{width:49%;margin-right:1%;height:450px;}
     .row2 .content>div{width: 70%;}
 }
 
-@media(max-width:750px){  
+@media(max-width:750px){
     .tab_content a{width: 45%;}
     .tab_content a img{height:200px;}
     }

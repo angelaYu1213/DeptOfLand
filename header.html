@@ -4,7 +4,7 @@
             <div id="Mnav">
                <div class="MheaderWP">
                    <div class="MnavHeader">
-                       <img src="img/logo_W.png" alt="">
+<!--                       <img src="img/logo_W.png" alt="">-->
                        <a href="javascript:;" class="close">
                            <span class="big">Ｘ</span>
                            <span class="small">CLOSE</span>
@@ -18,27 +18,32 @@
             </div>
         </div>
 <script>
-/*header*/
-    /*menu收合*/
-    var $W=$(window).width();
-    var $H=$(window).height();
-    $('#Mnav').width($W);
-    $('#Mnav').height($H);
- $(document).ready(function(){
-    $(window).resize(function(){
-        var $W=$(window).width();
-        var $H=$(window).height();
-         $('#Mnav').width($W);
-         $('#Mnav').height($H);
-      });   
+    $(document).ready(function(){
+        let $W=$(window).width();
+        let $H=$(window).height();
+
+            $('#menu').click(function(){
+                if( $W > 800 ){
+                    $('#Mnav').animate({'marginRight':450}, 800);
+                     $('footer .display').hide();
+                }else{
+                   $('#Mnav').css({'width':'100%','right':'-'+$W+'px'}).animate({'marginRight':$W}, 800);
+                    $('footer .display').hide();
+                }
+             });
+             $('header .close').click(function(){
+                 if( $W > 800 ){
+                     $('#Mnav').animate({'marginRight':'-450px'}, 400);
+                     $('footer .display').fadeIn(600);
+
+                 }else{
+                     $('#Mnav').animate({'marginRight':'-'+$W+'px'}, 400);
+                     $('footer .display').fadeIn(600);
+
+                    }
+
+             });
     });
-/*手機menu下拉*/
-$('#menu').click(function(){
-    $('#Mnav').slideDown();
-    $('footer .reservation').hide();
-});   
-    $('header .close').click(function(){
-        $('#Mnav').slideUp(600);
-        $('footer .reservation').fadeIn(600);
-    });
+
+
 </script>

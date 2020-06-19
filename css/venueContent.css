@@ -9,7 +9,7 @@
 .content p{line-height:2rem;margin-bottom:20px;}
 .btn{display:block;background-color:#355834;color:#fff;width:180px;height:59px;line-height:59px;margin:50px auto 160px;text-align:center;font-size:1.5rem;font-weight:500;cursor:pointer;}
 
-@media(max-width:1000px){  
+@media(max-width:1000px){
     .wrap{margin-top:80px;}
     .content{margin-top: 60px;}
 }

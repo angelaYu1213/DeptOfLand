@@ -13,7 +13,7 @@
 #main .flex a{display: block;}
 #main .flex a:hover p{background-color:#355834;color: #fff;}
 #main .flex .barrierFree{width: 0;}
-@media(max-width:800px){  
+@media(max-width:800px){
     #main .flex{justify-content: flex-start;}
     #main .flex>div{width: 45%;}
     #main .flex>div.thrid{margin-left: 15px;}

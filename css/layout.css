@@ -14,11 +14,11 @@ header.header{width:100%;position:fixed;top:0;z-index:2;background-color:#fff;}
 .top>a{width:20%;}
 .top>a .logo{background: url(../img/logo.png) center no-repeat;background-size:contain;width:100%;height:110px;position:relative;top:-1px;left:6px;}
 /*Mnav*/
-.top #Mnav{width:100%;text-align:left;background-color:rgba(17, 43, 39, 0.95);
-    position:fixed;top:0;right:0;z-index:5;display:none;}
-.top #Mnav .MheaderWP{width:100%;background-color:#14281D;}
+.top #Mnav{position: fixed;right: -450px;top: 0;width:450px;height: 100vh;
+background-color:rgba(17, 43, 39, 0.98);overflow-y: scroll;padding: 30px 0;box-sizing: border-box;z-index: 4;}
+.top #Mnav .MheaderWP{width:100%;}
 .top #Mnav .MnavHeader{max-width:1080px;width:90%;margin:0 auto;display:flex;justify-content:space-between;align-items: center;height:130px;}
-.top #Mnav .MnavHeader img{height:70px;object-fit: contain;} 
+.top #Mnav .MnavHeader img{height:70px;object-fit: contain;}
 .top #Mnav ul,.top #Mnav ul li{width:100%;margin:0 auto;line-height:70px;flex-direction:column;}
 .top #Mnav ul li a{display:block;max-width:1080px;width:90%;margin:0 auto;padding-right:100px;
 box-sizing: border-box;line-height:3rem;transition:all 0s;font-size:1.4rem;color:#fff;text-align: right;}
@@ -62,11 +62,11 @@ footer .footer .row img{height:43px;}
 footer .footer .row img:last-child{height: 66px;}
 footer .footer p{margin: 5px auto;color:#fff;text-align: left;font-weight: 200;}
 footer .footer>p{text-align:center;margin: 20px auto 5px;}
-/*預約*/  
+/*預約*/
 footer .display{width: 500px;height: 100vh;position: fixed;right:-500px;top: 0;z-index:3;}
 footer .display .close,header .close{display:block;opacity:1;cursor:pointer;text-align: center;width: 100px;
 position: absolute;right: 0;}
-header .close{position:relative;}
+
 footer .display .close .big,header .close .big{font-size:4rem;font-weight:200;color:#fff;line-height:3.5rem;}
 header .close .big{display:block;font-size:2.7rem;line-height:2rem;}
 footer .display .close .small,header .close .small{font-size:1rem;color:#fff;}
@@ -77,7 +77,10 @@ cursor: pointer;border-right:1px solid #fff;padding:15px 0;}
 footer .reservation img{width:31px;display: block;margin: 0 auto;}
 footer .reservation span{color:#355834;font-size:1.5rem;font-weight:700;writing-mode:vertical-lr;writing-mode:tb-lr;
 display: block;width:30px;margin-top: 15px;}
-footer .visit{position:fixed;right:-500px;top:0;width: 500px;height:100vh;background-color:#C3A877;overflow-y: scroll;
+footer .visit{
+/*    position:fixed;right:-500px;*/
+    position: absolute;right:0;
+    top:0;width: 500px;height:100vh;background-color:#C3A877;overflow-y: scroll;
 padding:30px 0;box-sizing: border-box;}
 footer .visit .time .top{position: relative;height:45px;display: block;}
 footer .visit .time .top #time{display: block;width:100%;height:45px;line-height: 45px;position:absolute;left:0;top:0;z-index:1;cursor: pointer;}
@@ -127,6 +130,7 @@ ui-state-highlight, .ui-widget-content .ui-state-highlight{border:1px solid #EEE
     footer .footer .row>div{padding:20px 0;}
     footer .footer .row>div p{text-align: center;}
     footer .reservation{top:205px}
+
 }
 @media(max-width:800px){
     footer .reservation{background-color: rgba(224, 211, 187, 0.59); }
