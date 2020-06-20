@@ -1,0 +1,12 @@
+.title{margin-bottom:40px;}
+.title h2{font-size:2rem;font-weight:700;}
+.center{text-align: center;color:#355834;}
+.center p{line-height: 2rem;}
+.btn{display:block;background-color:#355834;color:#fff;width:180px;height:59px;line-height:59px;margin:50px auto 160px;text-align:center;font-size:1.5rem;font-weight:500;cursor:pointer;}
+
+@media(max-width:700px){
+.btn{width:150px;}
+}
+@media(max-width:414px){
+.btn{width:120px;}
+}
